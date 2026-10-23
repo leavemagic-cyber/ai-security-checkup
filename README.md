@@ -6,6 +6,8 @@
 
 Some vulnerabilities can expose account access or files, or allow someone else's code to run on your computer. Your actual apps and versions determine exposure. You do not need to understand vulnerability identifiers first.
 
+**Everyday products covered in the [plain-language alerts](docs/PERSONAL-ALERTS.md) include Chrome/Firefox, Windows, iPhone/iPad/Mac and Android.** If you use ChatGPT, Gemini or Claude on the web, start with browser and operating-system updates. Desktop AI apps or extensions need their actual app and bundled components checked. Let AI determine which actions apply to you.
+
 ## Three steps
 
 1. **Copy the prompt below into your AI.**

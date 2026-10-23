@@ -6,6 +6,8 @@
 
 某些漏洞可能讓人偷走登入權限、讀取資料，甚至在你的電腦執行程式。是否影響你，要看你使用的軟體與版本；不用先學會看漏洞代號。
 
+**你每天用的 Chrome／Firefox、Windows、iPhone／iPad／Mac、Android 都有列入[白話提醒](docs/PERSONAL-ALERTS.zh-TW.md)。** 用 ChatGPT、Gemini、Claude 網頁聊天，先檢查瀏覽器與系統；裝了 AI 桌面軟體或外掛，再查實際使用的 App 與內建元件。讓 AI 判斷你需要哪一項處理。
+
 ## 只要三步
 
 1. **複製下面的話，貼給你使用的 AI。**
