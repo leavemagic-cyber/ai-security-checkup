@@ -1,5 +1,7 @@
 # Check, update and verify actual use
 
+This is an advanced reference for AI operators and people comfortable with commands. **If you have no technical background, [copy the prompt on the home page](../README.md) and let AI check, ask, help update and verify. You do not need to run the commands below yourself.**
+
 Verified: 2026-10-23. Identify the installation method before choosing an update path. People using AI only through a website primarily maintain their browser and operating system; signing in does not establish a local vulnerable Node installation.
 
 ## 1. Inventory each copy

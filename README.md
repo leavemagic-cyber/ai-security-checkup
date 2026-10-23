@@ -1,6 +1,55 @@
-# AI Security Checkup
+# AI Security Checkup — let AI help you check and update
 
-[完整繁體中文說明](README.zh-TW.md)
+[完整繁體中文](README.zh-TW.md)
+
+**Saw a security warning and don't know whether it affects you? Paste the prompt below into your AI. Let it investigate, ask, help you update and verify the result.**
+
+Some vulnerabilities can expose account access or files, or allow someone else's code to run on your computer. Your actual apps and versions determine exposure. You do not need to understand vulnerability identifiers first.
+
+## Three steps
+
+1. **Copy the prompt below into your AI.**
+2. **Let it investigate and explain what needs attention in plain language.**
+3. **When ready, reply “Yes, help me update.”** Let it help complete the update and verify the fix.
+
+No repository download, Node installation or command-line knowledge is needed for this workflow. An AI with computer access can help execute updates. A chat-only AI must disclose its limits and guide you one screen at a time. The same prompt can guide phone updates. **A prompt cannot grant capabilities the AI does not have.**
+
+## Copy and paste this prompt
+
+Use the code block's copy button, or open the [standalone prompt](prompts/QUICK-UPDATE.md).
+
+````
+Be my personal computer security helper. I have no technical background. Investigate for me and help me complete the fixes in plain language.
+
+Check first; do not update immediately. Establish whether you can read or control my device. Retrieve information available to you instead of asking me to open a terminal, find version numbers or read code. If you cannot inspect the device, say so and guide me one screen at a time; never pretend you scanned it. Ask what device I use only if necessary.
+
+Follow this workflow:
+
+1. Identify the operating system, browsers, everyday applications and AI tools I actually use. Prioritize official security announcements from the last seven days that affect individuals, plus older serious issues that remain unpatched. Check products I use; do not install new tools just to inspect, or scan private documents. Failure to locate a program is not proof it is absent.
+
+2. Compare current vendor advisories with actual installed versions, installation sources and exposure conditions. Explain which app, what could happen and whether I need to act now; show at most the five most important items first. Link official sources, but explain rather than relying on vulnerability identifiers or jargon. Distinguish confirmed affected versions, ordinary update recommendations and unresolved checks.
+
+3. Prepare a workable update route, then ask: “Would you like me to update these items?” State which apps, any cost, required closures or restarts, and potential loss of unsaved work. Wait for my explicit “Yes, help me update” before proceeding. This prompt is not update consent.
+
+4. After I agree, complete the actions you can perform. Use the existing official updater, official store or existing package manager, and update only the agreed items. Do not install unknown repair software, weaken protections, delete my data or indiscriminately upgrade everything. Explain and ask again if a different major version, payment or additional material impact becomes necessary. Guide me only where sign-in, system permissions or your tool rules require my own action. Never request or display passwords, keys or verification codes.
+
+5. Recheck the version and state actually in use and confirm normal operation. Applications can bundle old components; updating an external copy does not prove every copy is fixed. If an advisory requires signing in again, revoking potentially exposed access or other follow-up work, guide me in plain language. Clearly state incomplete items, why they remain and the simplest next action. A completed download is not a verified fix.
+
+Finish briefly: what was handled, what remains and whether I can continue normal use. Never publish or upload my device information.
+````
+
+## What needs attention recently?
+
+[Read the personal-user alerts and simplest actions](docs/PERSONAL-ALERTS.md). Each entry has a date and official source. Do not install products you do not use just to patch them.
+
+Recent issues extend beyond AI tools to browsers, operating systems and everyday apps. The prompt asks the AI to verify current vendor information instead of treating this repository's dated version table as permanently current.
+
+**If this saved time or helped you finish an update, please give the repository a ⭐ and share it with someone who needs it.** It is free to use; no star or personal data is required.
+
+Prepared with AI assistance. Advisory facts are dated and linked to vendor sources. This project does not detect intrusions or promise that an entire device is secure.
+
+<details>
+<summary>Advanced: optional offline checker and full technical documentation</summary>
 
 A small, offline checklist and dependency-free checker for **selected AI development tooling advisories**, verified against vendor sources on **2026-10-23**. Start with the [plain-language advisory guide](docs/ADVISORIES.md) and [update steps](docs/UPDATE.md).
 
@@ -82,3 +131,5 @@ Exit codes: **0** = no listed version flags, **1** = an affected version, **2** 
 Tests use synthetic versions and temporary fixtures: `node --test` (Node 20+ for the test runner; supported patched runtimes are recommended). CI checks Windows, macOS and Linux. No exploit payloads are included.
 
 Prepared with AI assistance; advisory statements were checked against the linked vendor sources. Community-maintained, unaffiliated with the named vendors. MIT license.
+
+</details>

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 — 2026-10-23
+
+- Default to copy a prompt → AI checks and explains → user consents → AI helps update → verifies.
+- Add complete English/Traditional Chinese prompts and personal-user alerts with simple official update routes.
+- Put command-line tooling in a collapsed advanced section; no download or terminal knowledge is required for the main workflow.
+- Add an optional star/share invitation, with no access gate.
+
 ## 0.1.0 — 2026-10-23
 
 - Initial offline Node/runtime and selected npm advisory checker.
