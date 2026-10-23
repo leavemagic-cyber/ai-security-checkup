@@ -1,9 +1,9 @@
 {
   "name": "ai-security-checkup",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "Plain-language AI prompts to check, ask, update and verify personal-device security, plus optional offline checks",
+  "description": "Plain-language personal security updates with or without AI, plus optional offline checks",
   "license": "MIT",
   "scripts": { "check": "node check.mjs", "test": "node --test" }
 }

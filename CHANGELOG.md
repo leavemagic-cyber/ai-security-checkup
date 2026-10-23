@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-10-23
+
+- Add a no-AI starting route in English and Traditional Chinese, with official browser update steps and copyable app/hosting support inquiries.
+- Give people without an AI account a visible homepage entry; distinguish a guide, a support request and a verified fix.
+- Update social drafts to include both no-AI and AI routes and the public GitHub address.
+
 ## 0.2.1 — 2026-10-23
 
 - Focus the current explainer and social drafts on four recent incidents: Node.js, LiteLLM, eMudhra and PHP2Shell.

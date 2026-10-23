@@ -1,14 +1,19 @@
-# AI Security Checkup — let AI help you check and update
+# AI Security Checkup — security updates without technical knowledge
 
 [完整繁體中文](README.zh-TW.md)
 
-**Saw a security warning and don't know whether it affects you? Paste the prompt below into your AI. Let it investigate, ask, help you update and verify the result.**
+**Saw a security warning and don't know whether it affects you? Start here, with or without AI.**
+
+- **No AI: [open the simple guide](docs/NO-AI.md).** Choose the software you use, follow official update steps, or copy a ready-written inquiry to support. No signup, repository download or terminal required.
+- **With AI: copy the complete prompt below.** Let it investigate, explain, ask, help update and verify.
+
+The guide is an easy starting point, not an automatic scanner or a guarantee that one click fixes every issue.
 
 Some vulnerabilities can expose account access or files, or allow someone else's code to run on your computer. Your actual apps and versions determine exposure. You do not need to understand vulnerability identifiers first.
 
 **This edition focuses on four October 17–21 incidents: Node.js security flaws, the malicious LiteLLM release, compromised eMudhra certificates and PHP2Shell.** If you install local AI tools, use apps connecting multiple AI providers, browse with Chrome/Firefox or own a website, see the corresponding [plain-language explanation](docs/PERSONAL-ALERTS.md). Exposure depends on actual software, versions and use. Chatting on the ChatGPT, Gemini or Claude website alone does not establish exposure to a local AI component.
 
-## Three steps
+## With AI: three steps
 
 1. **Copy the prompt below into your AI.**
 2. **Let it investigate and explain what needs attention in plain language.**
