@@ -1,0 +1,9 @@
+{
+  "name": "ai-security-checkup",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline, dependency-free checks for a dated selection of AI tooling security advisories",
+  "license": "MIT",
+  "scripts": { "check": "node check.mjs", "test": "node --test" }
+}

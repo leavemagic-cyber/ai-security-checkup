@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-23",
+  "scope": "Selected advisories only; version matches do not prove exploitability or absence of other vulnerabilities.",
+  "node": {
+    "minimum": { "22": "22.23.4", "24": "24.22.1", "26": "26.12.1" },
+    "source": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+    "release_sources": [
+      "https://nodejs.org/en/blog/release/v22.23.4",
+      "https://nodejs.org/en/blog/release/v24.22.1",
+      "https://nodejs.org/en/blog/release/v26.12.1"
+    ]
+  },
+  "packages": [
+    {
+      "name": "@anthropic-ai/claude-code",
+      "id": "CVE-2026-86063",
+      "intervals": [["0.0.0", "2.1.179"]],
+      "fix": "2.1.179 or later for this advisory; prefer the latest supported release through your existing installer.",
+      "conditions": "Installing a plugin from an attacker-controlled upstream on a host permitting SHA-shaped branch names.",
+      "source": "https://github.com/anthropics/claude-code/security/advisories/GHSA-pq7j-f95f-qfcv"
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "id": "CVE-2026-104850",
+      "intervals": [["1.12.0", "1.31.0"]],
+      "manual_after_upgrade": true,
+      "fix": "1.31.0 or later; also follow the issuer/expectedIssuer credential migration in docs/ADVISORIES.md.",
+      "conditions": "HTTP OAuth client holding credentials connects to an untrusted MCP server; stdio clients and SDK servers are excluded from this advisory.",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-6qxp-vccf-f47h"
+    },
+    {
+      "name": "@modelcontextprotocol/client",
+      "id": "CVE-2026-104850",
+      "intervals": [["2.0.0", "2.2.0"]],
+      "manual_after_upgrade": true,
+      "fix": "2.2.0 or later; directly imported core also needs 2.2.0 or later. Migrate stored credentials and bundled providers.",
+      "conditions": "HTTP OAuth use with the provider/storage/direct-fetchToken configurations listed in the advisory.",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-6qxp-vccf-f47h"
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "id": "CVE-2026-111767",
+      "intervals": [["1.24.0", "1.32.0"]],
+      "fix": "1.32.0 or later for this advisory.",
+      "conditions": "Experimental task support: evaluate the session isolation conditions in the advisory.",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-22jm-h49p-29qw"
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "id": "CVE-2026-111771",
+      "intervals": [["1.6.0", "1.32.0"]],
+      "fix": "1.32.0 or later for this advisory.",
+      "conditions": "Server bearer authentication; inspect token audience validation and deployment configuration.",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-rvq5-wwqv-78pq"
+    },
+    {
+      "name": "@modelcontextprotocol/server",
+      "id": "CVE-2026-111770",
+      "intervals": [["2.0.0", "2.3.0"]],
+      "manual_after_upgrade": true,
+      "fix": "2.3.0 or later AND one server/transport per request or session, or a createMcpHandler factory.",
+      "conditions": "Multiple HTTP clients share a server or stateless transport instance; stdio is excluded.",
+      "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-jm63-cq47-j5jp"
+    },
+    {
+      "name": "n8n",
+      "id": "GHSA-wvjj-qg37-pv73",
+      "intervals": [["2.0.0", "2.43.5"], ["2.44.0", "2.44.1"]],
+      "review_below": "2.0.0",
+      "fix": "2.43.5+ on the 2.43 branch, or 2.44.1+ on the 2.44 branch. Follow the supported upgrade path and back up persistent data.",
+      "conditions": "A member able to create/run workflows can access Data Table rows across projects. The advisory body does not establish a 1.x fix.",
+      "source": "https://github.com/n8n-io/n8n/security/advisories/GHSA-wvjj-qg37-pv73"
+    }
+  ]
+}
