@@ -2,6 +2,8 @@
 
 [回首頁](../README.zh-TW.md) · [English](NO-AI.md)
 
+**用 Windows、想下載後雙擊檢查與協助更新？看[Windows 小幫手（預覽版）](WINDOWS.zh-TW.md)。以下是不下載工具的做法。**
+
 **不用註冊 AI、不用下載這個 Repo、不用打指令或看版本號。先點你平常會做的事。**
 
 - [我用 Chrome 上網](#我用-chrome-上網)

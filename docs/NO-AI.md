@@ -2,6 +2,8 @@
 
 [Home](../README.md) · [完整繁體中文](NO-AI.zh-TW.md)
 
+For a downloadable Windows check-and-update helper, see the [preview with a Traditional Chinese UI](WINDOWS.zh-TW.md). The instructions below require no download.
+
 **No AI account, repository download, terminal or version-number interpretation required. Choose what you use:**
 
 - [Chrome](#chrome)

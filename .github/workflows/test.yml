@@ -18,3 +18,18 @@ jobs:
         if: runner.os == 'Windows'
         shell: pwsh
         run: ./scripts/Inspect-RunningNode.ps1
+      - name: Build and test Windows helper
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./windows/Build.ps1
+      - name: Upload Windows helper
+        if: runner.os == 'Windows'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-helper
+          if-no-files-found: error
+          path: |
+            local/windows-build/SecurityCheckup.exe
+            local/windows-build/README.zh-TW.txt
+            local/windows-build/SHA256SUMS.txt
+            local/windows-build/self-test.txt

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 preview — 2026-10-23
+
+- Add a Traditional Chinese Windows GUI: offline check, exact update-list consent, scoped WinGet execution and post-update file verification.
+- Keep Node on its existing supported major; leave managed runtimes, malicious-release cleanup and remote websites unresolved rather than overwriting them.
+- Add 27 boundary checks, real-machine read-only scan validation, UI render inspection, and a Windows CI build artifact. No real installation end-to-end acceptance is claimed.
+- Publish explicit coverage, unsigned-binary limitations, source and download routes without requiring an AI account or terminal.
+
 ## 0.3.0 — 2026-10-23
 
 - Add a no-AI starting route in English and Traditional Chinese, with official browser update steps and copyable app/hosting support inquiries.

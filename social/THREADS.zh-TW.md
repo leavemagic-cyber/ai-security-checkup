@@ -14,7 +14,7 @@
 
 ④ PHP2Shell：自己的 WordPress 或自架網站若使用未修補 PHP，未登入的攻擊者也可能在主機執行程式。
 
-看不懂也能開始。我們做了免費開源懶人包：沒有 AI，照著點官方更新、複製詢問文字給客服；有 AI，貼提示詞讓它先查、問過你再協助修補。
+看不懂也能開始。我們做了免費開源懶人包：沒有 AI，可用 Windows 雙擊預覽版或免下載教學；有 AI，貼提示詞讓它先查、問過你再協助修補。
 
 https://github.com/leavemagic-cyber/ai-security-checkup
 
@@ -35,10 +35,12 @@ https://github.com/leavemagic-cyber/ai-security-checkup
 
 沒有 AI，也不用先註冊或付費買 AI。
 
-打開繁中首頁，點「免 AI 懶人包」：
+打開繁中首頁，選 Windows 雙擊預覽版，或「免 AI 懶人包」：
 https://github.com/leavemagic-cyber/ai-security-checkup/blob/main/README.zh-TW.md
 
-選你平常用的軟體，照著點官方更新。需要工具客服或主機商確認的項目，也有整段可複製的詢問文字，不用看版本號或打指令。
+Windows 工具先檢查，列出支援的更新項目，你同意後才執行；無法自動處理會明說。預覽版的驗證範圍見下載頁。
+
+不下載也能照教學點官方更新，或複製詢問文字給客服／主機商。不用看版本號或打指令。
 
 有 AI 則可複製首頁提示詞：先檢查、白話說明，你回答「好，幫我更新」後再協助處理。
 

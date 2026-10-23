@@ -4,10 +4,11 @@
 
 **Saw a security warning and don't know whether it affects you? Start here, with or without AI.**
 
-- **No AI: [open the simple guide](docs/NO-AI.md).** Choose the software you use, follow official update steps, or copy a ready-written inquiry to support. No signup, repository download or terminal required.
+- **Windows, no AI: [double-click helper (preview, Traditional Chinese UI)](docs/WINDOWS.zh-TW.md).** Check first, review the proposed list, consent to supported updates, then review results. The download page states coverage and validation limits.
+- **No download or another device: [open the simple guide](docs/NO-AI.md).** Choose the software you use, follow official update steps, or copy a ready-written inquiry to support. No signup or terminal required.
 - **With AI: copy the complete prompt below.** Let it investigate, explain, ask, help update and verify.
 
-The guide is an easy starting point, not an automatic scanner or a guarantee that one click fixes every issue.
+The Windows helper checks common locations and can update supported installations after consent; the no-download guide provides instructions. Neither guarantees that one click fixes every issue.
 
 Some vulnerabilities can expose account access or files, or allow someone else's code to run on your computer. Your actual apps and versions determine exposure. You do not need to understand vulnerability identifiers first.
 
