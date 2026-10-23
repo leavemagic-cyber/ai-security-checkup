@@ -1,6 +1,6 @@
 {
   "name": "ai-security-checkup",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "Plain-language AI prompts to check, ask, update and verify personal-device security, plus optional offline checks",

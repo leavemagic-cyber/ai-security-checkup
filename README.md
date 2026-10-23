@@ -6,7 +6,7 @@
 
 Some vulnerabilities can expose account access or files, or allow someone else's code to run on your computer. Your actual apps and versions determine exposure. You do not need to understand vulnerability identifiers first.
 
-**Everyday products covered in the [plain-language alerts](docs/PERSONAL-ALERTS.md) include Chrome/Firefox, Windows, iPhone/iPad/Mac and Android.** If you use ChatGPT, Gemini or Claude on the web, start with browser and operating-system updates. Desktop AI apps or extensions need their actual app and bundled components checked. Let AI determine which actions apply to you.
+**This edition focuses on four October 17–21 incidents: Node.js security flaws, the malicious LiteLLM release, compromised eMudhra certificates and PHP2Shell.** If you install local AI tools, use apps connecting multiple AI providers, browse with Chrome/Firefox or own a website, see the corresponding [plain-language explanation](docs/PERSONAL-ALERTS.md). Exposure depends on actual software, versions and use. Chatting on the ChatGPT, Gemini or Claude website alone does not establish exposure to a local AI component.
 
 ## Three steps
 
@@ -30,6 +30,8 @@ Follow this workflow:
 1. Identify the operating system, browsers, everyday applications and AI tools I actually use. Prioritize official security announcements from the last seven days that affect individuals, plus older serious issues that remain unpatched. Check products I use; do not install new tools just to inspect, or scan private documents. Failure to locate a program is not proof it is absent.
 
 2. Compare current vendor advisories with actual installed versions, installation sources and exposure conditions. Explain which app, what could happen and whether I need to act now; show at most the five most important items first. Link official sources, but explain rather than relying on vulnerability identifiers or jargon. Distinguish confirmed affected versions, ordinary update recommendations and unresolved checks.
+
+If a release was maliciously modified, inspect installation records and files without starting that environment. Do not execute it just to check a version: in a suspected Python environment, even starting Python or pip may trigger malicious startup code again. If exposure is confirmed, stop use, follow official isolation and clean-rebuild guidance, and address potentially exposed account access. An upgrade alone is not proof of removal. A legitimate file with a matching name is not evidence of infection.
 
 3. Prepare a workable update route, then ask: “Would you like me to update these items?” State which apps, any cost, required closures or restarts, and potential loss of unsaved work. Wait for my explicit “Yes, help me update” before proceeding. This prompt is not update consent.
 

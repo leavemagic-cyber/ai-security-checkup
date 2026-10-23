@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-10-23
+
+- Focus the current explainer and social drafts on four recent incidents: Node.js, LiteLLM, eMudhra and PHP2Shell.
+- Require static inspection before starting potentially compromised environments; distinguish a malicious release from an ordinary update.
+- Explain affected everyday uses, official remedies and verification limits without asking readers to interpret versions or run commands.
+
 ## 0.2.0 — 2026-10-23
 
 - Name familiar apps and everyday exposure scenarios in social introductions; add a Facebook explainer with simple update routes and a feedback invitation.

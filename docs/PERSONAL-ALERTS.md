@@ -1,45 +1,45 @@
-# Recent security issues: the simplest actions for you
+# Four recent security incidents: do they affect you?
 
-Verified **2026-10-23**. Check whether you use a product, then choose its simplest update route. **You do not need to interpret versions: paste [this prompt into your AI](../prompts/QUICK-UPDATE.md), let it investigate, ask your permission and help update.**
+Verified **2026-10-23**. This edition covers incidents reported or announced October 17–21. **No version interpretation or commands required: paste [this prompt](../prompts/QUICK-UPDATE.md) into AI. Let it check, explain, ask permission and help remediate.**
 
-## New announcements and updates this week
+## Local AI apps or extensions: Node.js, October 21
 
-| Do you use it? | What could happen? | Simplest action |
-| --- | --- | --- |
-| Chrome | The October 20 stable release contains many security fixes. Browsers process websites and documents daily; old versions can give malicious content opportunities to exploit bugs. This does not mean every issue is actively exploited. | Desktop ⋮ menu → Help → About Google Chrome. On phones, update through the existing app store. Stay on your stable channel; no beta is needed. |
-| Firefox | October 20–21 updates block compromised website certificates, helping avoid continued trust in identity documents that became unsafe. | Desktop menu → Help → About Firefox; on Mac use the Firefox menu. Store/managed installations use their existing route. On Android, update through Google Play. |
-| AI apps, extensions and local tools | The October 21 Node advisory includes issues that can allow attacker code under specific conditions. Updating an external copy does not necessarily update an app's bundled copy. | Let AI identify the actual app, use its official updater/store and check bundled components. Do not overwrite internal files or install another Node copy just to patch it. |
-| Your own website or self-hosted service | PHP's October 21 advisory describes errors that can lead to remote code execution. This concerns the host running PHP, not every person visiting a PHP website. | Confirm usable backups, then update supported PHP patches through the existing hosting panel or ask the host to confirm. Updating WordPress alone does not prove PHP is patched. |
+Some AI tools, agents and extensions bundle Node.js. Among these ten issues, some can permit attacker code execution or bypass website identity checks under particular conditions.
 
-Mozilla already distributed a certificate blocklist automatically; these Firefox releases also embed it for people who did not receive the automatic list. AI issues depend on the actual app and conditions; signing into an AI website alone does not establish local exposure.
+**Simplest action:** let AI identify the actual app and bundled component, use its official updater and verify the copy in use. Updating a separate system Node does not establish that bundled copies are fixed. Do not install Node unnecessarily. **Chatting on the ChatGPT, Gemini or Claude website alone does not establish local exposure.**
 
-Official sources:
+[Official Node.js advisory](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases). Technical baselines: 22.23.4 / 24.22.1 / 26.12.1, matched to the existing branch.
 
-- Chrome: [October 20 release](https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02018666648.html), [update instructions](https://support.google.com/chrome/answer/95414).
-- Firefox: [October 20 desktop advisory](https://www.mozilla.org/en-US/security/advisories/mfsa2026-111/), [October 21 Android advisory](https://www.mozilla.org/en-US/security/advisories/mfsa2026-116/), [update instructions](https://support.mozilla.org/en-US/kb/update-firefox-latest-release).
-- AI tools: [October 21 Node advisory](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases), [verified Claude, MCP and n8n advisories](ADVISORIES.md).
-- Website hosts: [October 21 PHP advisory](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w).
+## Apps connecting several AI providers: LiteLLM, October 21
 
-## Earlier issues still worth fixing if you have not
+A **maliciously modified release** can steal accessible credentials/API keys and execute attacker code. Check actual contaminated artifacts, rather than inferring exposure from an AI brand.
 
-| Do you use it? | Why care? | Simplest action |
-| --- | --- | --- |
-| Windows | The October 13 Windows Shell issue is in the Known Exploited Vulnerabilities catalog. Crafted content delivered by messages, links or attachments can evade some internet-file protections; the attacker still needs to entice user action. | Start → Settings → Windows Update → Check for updates. Install the security updates offered for this computer. |
-| iPhone, iPad or Mac | Apple's September 28 advisory describes malicious files leading to code execution and reports of sophisticated targeted exploitation. | iPhone/iPad: Settings → General → Software Update. Mac: System Settings → General → Software Update. Let AI identify the appropriate security update; do not force a major upgrade. |
-| Android | The October 5 bulletin includes critical privilege and service-disruption issues. Some require no extra click, but device versions, conditions and protections still matter. | In Settings, find Software Update/System Update; also check Google Play system updates. Menu locations and availability vary, so let AI guide you one screen at a time. |
+**Simplest action:** inspect installation records and files statically, or ask the service operator. **Do not start a suspected environment to check its version: Python or pip startup can trigger malware again.** Confirmed exposure requires stopping use, isolation and a clean rebuild. If malware ran with network access, follow official instructions to revoke/replace credentials it could access. An upgrade alone is not proof of removal.
 
-These have separate dates, are not all new this week and do not mean every device can be remotely taken over. If the OS is out of support, “no updates available” is not a safety conclusion; ask AI to establish an available official patch route.
+[Official incident and response](https://docs.litellm.ai/blog/security-incident-oct-21-2026). Malicious PyPI version: 1.107.0. Some corresponding and floating-tag container publications were also affected; check publication windows and image identity. No match is not a clean bill of health for the entire computer.
 
-Official sources:
+## Everyday Chrome/Firefox browsing: eMudhra, reported October 17, announced October 20
 
-- Windows: [Microsoft advisory](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951), [machine-readable bulletin](https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Oct), [CISA catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [official update instructions](https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates).
-- Apple: [iPhone/iPad advisory](https://support.apple.com/en-us/149226), [Mac advisory](https://support.apple.com/en-us/149228), [current releases](https://support.apple.com/en-us/100100), [iPhone/iPad guide](https://support.apple.com/en-us/118575), [Mac guide](https://support.apple.com/en-us/108382).
-- Android: [this month's bulletin](https://source.android.com/docs/security/bulletin/2026/2026-10-01), [official update instructions](https://support.google.com/android/answer/7680439).
+Certificates are website identity documents. Compromised intermediate keys can let an attacker **who can intercept a connection impersonate websites and read or modify traffic**. This does not mean all HTTPS websites were breached. A lock icon does not replace updates or justify ignoring warnings.
 
-## If a restart is required
+**Simplest action:** let AI check official browser updates and effective certificate blocks. Firefox distributed automatic blocks first; October 20–21 releases embed protections too. Chrome updates a separate blocklist, so browser version alone is insufficient evidence. Independent app trust stores need separate checks. Never bypass certificate warnings, install unknown roots or indiscriminately delete similarly named certificates.
 
-Save forms, documents and ongoing work first; back up where needed. Saved data normally remains, but unsaved content may be lost, running jobs can be interrupted, and the device/app is temporarily unavailable. Timing depends on the device and update. Let AI identify affected work before you choose a restart time.
+[Mozilla report](https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/), [cross-vendor record](https://bugzilla.mozilla.org/show_bug.cgi?id=2083449), [Chrome update guide](https://support.google.com/chrome/answer/95414), [Firefox update guide](https://support.mozilla.org/en-US/kb/update-firefox-latest-release).
 
-**Completion means verifying what took effect, not just finishing a download.** Return to the [homepage](../README.md), copy the prompt and let AI handle supported actions, guiding you only where sign-in or confirmation needs your own participation.
+## Your WordPress website or self-hosted service: PHP2Shell, October 21
 
-If this helped, give the repository a ⭐ and share it. These are selected alerts; verify current vendor information whenever acting later.
+Two critical flaws in PHP, a runtime behind many websites, can let an unauthenticated attacker execute code on the website host. **Ordinary visitors do not need to install PHP updates on their computers merely for visiting these sites.**
+
+**Simplest action:** let AI confirm backups and compatibility, then use the existing hosting panel to update PHP, or ask the managed host to confirm. Updating WordPress/plugins alone does not establish that PHP is fixed.
+
+[Official emergency announcement](https://www.php.net/archive/2026.php#2026-10-21-5), [advisory one](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w), [advisory two](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp). Fixed: 8.5.12 / 8.4.27 / 8.3.36 / 8.2.35. Providers using backports should supply corresponding patch evidence.
+
+## Your three steps
+
+1. Copy [the prompt](../prompts/QUICK-UPDATE.md); let AI check actual exposure.
+2. Read its proposed actions and any interruption.
+3. When ready, reply “Yes, help me update.” Let it act and verify.
+
+Save work before restarting: unsaved content may be lost and jobs interrupted. **Downloading, installing, restarting and verifying the active version are separate stages.** AI must disclose where it cannot operate or verify; a prompt cannot guarantee every repair.
+
+These are dated alerts; check current official information when acting. Star the [repository](../README.md) and share it if useful. No star required.
